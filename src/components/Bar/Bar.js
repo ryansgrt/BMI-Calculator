@@ -6,8 +6,8 @@ const Bar =({labelData, bmiData})=>{
     const data = canvas =>{
         const ctx = canvas.getContext('2d');
         const gradient = ctx.createLinearGradient(63,81,181,700);
-        gradient.addColorStop(0, '#929dd9')
-        gradient.addColorStop(1, '#172b4b')
+        gradient.addColorStop(0, '#ccd992')
+        gradient.addColorStop(1, '#4b4a17')
 
         return{
             labels : labelData,
@@ -16,7 +16,7 @@ const Bar =({labelData, bmiData})=>{
                     label : 'BMI',
                     data: bmiData,
                     backgroundColor: gradient,
-                    borderColor: '#3F51B5',
+                    borderColor: '#96b53f',
                     pointRadius: 6,
                     pointHoverRadius:8,
                     pointHoverBorderColor: 'white',
